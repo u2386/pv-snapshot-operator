@@ -1,0 +1,7 @@
+apiVersion: storage.u2386.github.com/v1beta1
+kind: PersistentVolumeSnapshot
+metadata:
+  name: persistentvolumesnapshot-sample
+spec:
+  # Add fields here
+  foo: bar

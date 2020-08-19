@@ -1,0 +1,20 @@
+# permissions for end users to view persistentvolumesnapshots.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: persistentvolumesnapshot-viewer-role
+rules:
+- apiGroups:
+  - storage.u2386.github.com
+  resources:
+  - persistentvolumesnapshots
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - storage.u2386.github.com
+  resources:
+  - persistentvolumesnapshots/status
+  verbs:
+  - get

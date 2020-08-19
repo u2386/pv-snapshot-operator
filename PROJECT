@@ -1,0 +1,7 @@
+domain: u2386.github.com
+repo: pv-snapshot-operator
+resources:
+- group: storage
+  kind: PersistentVolumeSnapshot
+  version: v1beta1
+version: "2"
